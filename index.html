@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | SARVESH BHOSALE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link id='' rel="shortcut icon" href="./assets/r2.png" type="image/x-png" sizes="64x64">
+    
+
+   
+
+  </head>
+
+
+<!-- left side name and navigation bar----------------------------------------------- -->
+
+
+  <body>
+    <nav id="desktop-nav">
+      <!-- <div class="logo">SARVESH BHOSALE</div> -->
+      <div class="logo" style="cursor: pointer !important; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">SARVESH BHOSALE</div>
+
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">SARVESH BHOSALE</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <!-- profile picture and intro ---------------------------------------------------------->
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="assets/r2.png" alt="Rohan bhosle profile picture" /> -->
+        <img src="assets/r2.png" alt="Rohan bhosle profile picture" style="transition: transform 0.3s ease !important; cursor: pointer !important;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';" />
+
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">SARVESH BHOSALE</h1>
+        <p class="section__text__p2">Passionate Programmer, MASTER OF COMPUTER APPLICATION Grad. Let's connect and collaborate, HAPPY CODING!</p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sarvesh_Resume.pdf')"
+          >
+            Download CV
+          </button>
+
+          <!-- <button class="btn btn-color-1" onclick="window.open('./assets/conv.mp4')">
+            Contact Info
+          </button> -->
+
+          <button class="btn btn-color-1" onclick="scrollToContact()">
+            Contact Info
+        </button>
+
+        </div>
+        <div id="socials-container">
+          <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/sarvesh-bhosale-a00170147/', '_blank')"
+         />
+
+         <img
+         src="./assets/github.png"
+         alt="My Github profile"
+         class="icon"
+         onclick="window.open('https://github.com/Sarv21', '_blank')"
+     />
+     
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- about me ------------------------------------------------------------- -->
+    <br/>
+    <br/>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- <img
+            src="./assets/aboutme.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          /> -->
+          <img src="./assets/aboutme.jpg" alt="Profile picture" class="about-pic" style="transition: transform 0.3s ease !important; cursor: pointer !important;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';" />
+
+
+
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Data Anlayst Intern at Trainity</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Master of Computer Application (MCA) from PES University,Bangalore</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <h4>Professional Background :
+                I  Sarvesh Bhosale, a dynamic and results-oriented Data Analytics professional with a Masters in Computer Applications from PES University, Bangalore, completed in October 2023 with  6.7 CGPA. Android App called CampNomad - Published in "International Journal of Research Publication and Reviews" (IJRPR) with Registration Number: 24889.
+                I embarked on my professional journey by undertaking a challenging internship at Trainity as a Data Analyst, where I honed my skills and gained hands-on experience in the field of data analytics from January 2024-to-April 2024.</h4>
+            </p>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+
+
+
+
+    <!-- skills-------------------------------------------------------------------- -->
+     
+    <br/>
+    <br/>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Statistical Analysis</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hypothesis Testing </h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL (Programming Language)</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python  (Programming Language)</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R language</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MATLAB </h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>excel </h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd------------------------- -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Visualization </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau (Business Intelligence Software)</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib </h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Regression</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Clustering</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Classification Algorithms </h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- 3rd------------------ -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Communication and Presentation</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Effective Communication</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Presentation Skills  </h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>English</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hindi</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kannada</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Marathi</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+
+
+
+    <!-- projects-------------------------------------------------------------------------- -->
+
+    <section id="projects"  >
+      <p class="section__text__p1">Browse My Recent</p>
+      
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=''"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=""
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=''"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=""
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=''"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=""
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  
+    
+  
+
+
+    <!-- contacts----------------------------------------------------------------------------- -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sarv041299@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sarvesh-bhosale-a00170147/"  target="_blank">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.jpg"
+            alt="contact number"
+            class="icon contact-icon"
+          />
+          <p><a>Contact Number - 9535199610</a></p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- footer --------------------------------------------- -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sarvesh Bhosale. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      function scrollToContact() {
+          // Get the contact section element
+          var contactSection = document.getElementById('contact');
+  
+          // Scroll to the contact section smoothly
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+  
+          // Modify the appearance of the contact button after scrolling
+          var contactButton = document.querySelector('.contact-button');
+          contactButton.classList.add('contact-button-clicked');
+      }
+  </script>
+
+    
+
+  </body>
+</html>
